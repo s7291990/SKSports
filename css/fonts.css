@@ -8,8 +8,8 @@
 
 @font-face {
   font-family: "Moebius_Regular";
-  src: url("../fonts/Moebius/Moebius_Regular.eot");
-  src: url("../fonts/Moebius/Moebius_Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/Moebius/Moebius_Regular.woff2") format("woff2");
+  src: url("../fonts/Moebius/MoebiusKorea-Regular.eot");
+  src: url("../fonts/Moebius/MoebiusKorea-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/Moebius/MoebiusKorea-Regular.woff2") format("woff2");
   font-weight: normal;
   font-style: normal;
 }
@@ -24,8 +24,8 @@
 
 @font-face {
   font-family: "Moebius_Bold";
-  src: url("../fonts/Moebius/Moebius_Bold.eot");
-  src: url("../fonts/Moebius/Moebius_Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/Moebius/Moebius_Bold.woff2") format("woff2");
+  src: url("../fonts/Moebius/MoebiusKorea-Bold.eot");
+  src: url("../fonts/Moebius/MoebiusKorea-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/Moebius/MoebiusKorea-Bold.woff2") format("woff2");
   font-weight: normal;
   font-style: normal;
 }
