@@ -1,0 +1,32 @@
+html,
+body {
+  margin: 0;
+}
+.wrapper,
+.shapeUl {
+  display: none;
+}
+.landscape {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: url('../images/bg_landscape.jpg') no-repeat center center;
+  background-size: cover;
+}
+.landscape strong {
+  margin-top: 20vh;
+  font-size: 4vw;
+  font-family: 'Moebius_Bold';
+  color: #222;
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: 'Moebius_Bold';
+  src: url('../fonts/Moebius/Moebius_Bold.eot');
+  src: url('../fonts/Moebius/Moebius_Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+}

@@ -1,0 +1,31 @@
+@font-face {
+  font-family: "MoebiusKorea-Regular";
+  src: url("../fonts/Moebius/MoebiusKorea-Regular.svg#MoebiusKorea-Regular") format("svg"), url("../fonts/Moebius/MoebiusKorea-Regular.ttf") format("truetype"),
+    url("../fonts/Moebius/MoebiusKorea-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Moebius_Regular";
+  src: url("../fonts/Moebius/Moebius_Regular.eot");
+  src: url("../fonts/Moebius/Moebius_Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/Moebius/Moebius_Regular.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "MoebiusKorea-Bold";
+  src: url("../fonts/Moebius/MoebiusKorea-Bold.svg#MoebiusKorea-Bold") format("svg"), url("../fonts/Moebius/MoebiusKorea-Bold.ttf") format("truetype"),
+    url("../fonts/Moebius/MoebiusKorea-Bold.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Moebius_Bold";
+  src: url("../fonts/Moebius/Moebius_Bold.eot");
+  src: url("../fonts/Moebius/Moebius_Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/Moebius/Moebius_Bold.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
