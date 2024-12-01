@@ -247,6 +247,40 @@
 .ytb-func-wrap:before{content:"";width:1px;height:20px;overflow:hidden;background:#dbdbdb;position:absolute;right:82px;top:31px;}
 .ytb-func-wrap button{display:flex;justify-content:center;align-items:center;width:24px;height:24px;overflow:hidden;border:0;background:transparent;padding:0;}
 
+/*상세 페이지*/
+.view-page-wrap{width:100%;height:auto;overflow:hidden;max-width:1200px;margin:0 auto 100px auto;}
+.view-page-wrap .view-header-wrap{border-top:1px solid #ea002c;border-bottom:1px solid #ccc;width:100%;height:auto;overflow:hidden;box-sizing: border-box;padding:30px;}
+.view-page-wrap .view-header-wrap .mtit{width:100%;height:auto;overflow:hidden;font-size:24px;color:#222;font-weight:500;font-family: 'Noto Sans KR';}
+.view-page-wrap .view-header-wrap ul{gap:10px;margin-top:15px;width:100%;height:auto;overflow:hidden;display:flex;justify-content:flex-start;align-items:center;}
+.view-page-wrap .view-header-wrap ul li{display:flex;justify-content:flex-start;align-items:center;}
+.view-page-wrap .view-header-wrap ul li img{display:flex;transform:translateY(1px)}
+.view-page-wrap .view-header-wrap ul li span{display:flex;font-size:16px;color:#656565;margin-left:4px;}
+.view-page-wrap .view-cont-wrap{border-bottom:1px solid #c5c5c5;width:100%;height:auto;overflow:hidden;box-sizing: border-box;padding:30px;}
+.view-page-wrap .view-cont-wrap .mpic{width:100%;height:auto;overflow:hidden;}
+.view-page-wrap .view-cont-wrap .mpic img{width:100%;}
+.view-page-wrap .view-cont-wrap .mdesc{font-size:16px;color:#222;line-height:1.5em;width:100%;height:auto;overflow:hidden;padding:20px 0;}
+.view-page-wrap .view-file-wrap{position:relative;border-bottom:1px solid #c5c5c5;width:100%;height:auto;overflow:hidden;display:flex;justify-content:flex-start;align-items:center;}
+.view-page-wrap .view-file-wrap .key{width:120px;height:100%;overflow:hidden;display:flex;justify-content:center;align-items:center;font-family: 'Noto Sans KR';font-size:16px;color:#222;font-weight:400;position:absolute;left:0;top:0;background:#f8f8f8;}
+.view-page-wrap .view-file-wrap .value{margin-left:120px;flex:1;width:100%;height:auto;overflow:hidden;box-sizing: border-box;padding:20px;}
+.view-page-wrap .view-file-wrap .value ul{width:100%;height:auto;overflow:hidden;}
+.view-page-wrap .view-file-wrap .value ul li{width:100%;height:auto;overflow:hidden;}
+.view-page-wrap .view-file-wrap .value ul li + li{margin-top:10px;}
+.view-page-wrap .view-file-wrap .value ul li a{display:flex;justify-content:flex-start;align-items:center;}
+.view-page-wrap .view-file-wrap .value ul li a img{display:flex;}
+.view-page-wrap .view-file-wrap .value ul li a span{margin-left:10px;font-size:16px;color:#222;display:block;width:100%;height:auto;overflow:hidden;flex:1;text-overflow:ellipsis; white-space:nowrap;word-wrap:normal;}
+.view-page-wrap .view-file-wrap .value ul li a:hover span{text-decoration:underline;}
+.view-page-wrap .view-func-wrap{margin-top:60px;border-top:1px solid #c5c5c5;width:100%;height:auto;overflow:hidden;padding:20px 0;display:flex;justify-content:space-between;align-items:center;}
+.view-page-wrap .view-func-wrap .btn-view-prev{display:flex;justify-content:flex-start;align-items:center;}
+.view-page-wrap .view-func-wrap .btn-view-prev img{transform:translateY(2px);display:flex;}
+.view-page-wrap .view-func-wrap .btn-view-prev strong{margin-left:5px;display:flex;font-size:16px;color:#5e5e5e;font-weight:500;font-family: 'Noto Sans KR';}
+.view-page-wrap .view-func-wrap .btn-view-prev span{display:flex;font-size:16px;color:#5e5e5e;margin-left:50px;}
+.view-page-wrap .view-func-wrap a:hover span{text-decoration:underline;}
+.view-page-wrap .view-func-wrap .btn-view-list{font-family: 'Noto Sans KR';display:flex;justify-content:center;align-items:center;width:160px;height:50px;border:1px solid #ccc;padding:0;background:#Fff;font-size:16px;color:#5e5e5e;}
+.view-page-wrap .view-func-wrap .btn-view-next{display:flex;justify-content:flex-start;align-items:center;}
+.view-page-wrap .view-func-wrap .btn-view-next img{transform:translateY(2px);display:flex;}
+.view-page-wrap .view-func-wrap .btn-view-next strong{margin-right:5px;display:flex;font-size:16px;color:#5e5e5e;font-weight:500;font-family: 'Noto Sans KR';}
+.view-page-wrap .view-func-wrap .btn-view-next span{display:flex;font-size:16px;color:#5e5e5e;margin-right:50px;}
+
 @media only screen and (max-width: 767px) {
 
 }
