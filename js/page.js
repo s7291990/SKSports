@@ -36,6 +36,12 @@ $(function(){
       $(this).parents("li").eq(0).addClass("on");
     }
   });
+  $("body").on("click", ".btn-total-nav", function(ev){
+    $(".gnb-box").removeClass("off").addClass("on");
+  });
+  $("body").on("click", ".btn-mob-gnb-close", function(ev){
+    $(".gnb-box").removeClass("on").addClass("off");
+  });
 
   // 패밀리 사이트
   $("body").on("click", "#footer .fot_fam button", function(){
