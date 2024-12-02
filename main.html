@@ -52,6 +52,7 @@
           <h1>
             <a href="javascript:void(0)">SK<span>sports</span></a>
           </h1>
+          <button type="button" class="btn-main-total-nav"><img src="./images/ico/ico-totalmenu-white.png" /></button>
           <div class="gnb-box off">
 
             <ul class="gnb-list">
@@ -60,6 +61,18 @@
               </li>
               <li>
                 <a href="javascript:void(0)">SK나이츠</a>
+                <div class="sub-menu-wrap">
+                  <div class="sub-item">
+                    <ul>
+                      <li>
+                        <ul>
+                          <li><a href="javascript:void(0)" class="str">선수단</a></li>
+                          <li><a href="javascript:void(0)" class="str">홈경기 안내</a></li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
               </li>
               <li>
                 <a href="javascript:void(0)">아마추어 스포츠 지원</a>
@@ -70,6 +83,7 @@
                         <ul>
                           <li><a href="javascript:void(0)" class="str">단체 협회</a></li>
                           <li><a href="javascript:void(0)" class="str">선수</a></li>
+                          <li><a href="javascript:void(0)" class="str">선수일정</a></li>
                         </ul>
                       </li>
                     </ul>
@@ -107,7 +121,7 @@
                 </div>
               </li>
             </ul>
-
+            <button type="button" class="btn-mob-gnb-close"><img src="./images/ico/ico-pop-close.png"></button>
           </div>
         </div>
       </header>
@@ -199,11 +213,11 @@
               },
               */
               slidesPerView: "1",
-              spaceBetween: 30,
+              spaceBetween: 0,
               navigation: {
                 nextEl: "#main-slide-wrap .swiper-button-next",
                 prevEl: "#main-slide-wrap .swiper-button-prev",
-              }
+              },
             });
 
           </script>
@@ -362,17 +376,75 @@
                   </div>
                   <div class="swiper-button-next"></div>
                   <div class="swiper-button-prev"></div>
-
                 </div>
                 <script>
                   var schSlideWrap = new Swiper('#sch-slide', {
-                    loop: true,
+                    //loop: true,
                     slidesPerView: "2",
                     spaceBetween: 24,
                     navigation: {
                       nextEl: "#sch-slide .swiper-button-next",
                       prevEl: "#sch-slide .swiper-button-prev",
-                    }
+                    },
+                    observer: true,
+                    observeParents: true,
+                    // breakpoints: {
+                    //   320: {
+                    //     slidesPerView: '1',
+                    //   },
+                    //   767: {
+                    //     slidesPerView: '2',
+                    //   }
+                    // }
+                  });
+                </script>
+
+                <!-- Swiper -->
+                <div id="sch-slide-mob" class="swiper-container">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <a href="javascript:void(0)" class="slide-item">
+                        <div class="mpic"><img src="./images/etc/etc-player-list01.jpg" alt="김준우" /></div>
+                        <div class="mcont">
+                          <div class="minfo">10월 11일 김준우</div>
+                          <div class="mcate">수영</div>
+                        </div>
+                      </a>
+                    </div>
+                    <div class="swiper-slide">
+                      <a href="javascript:void(0)" class="slide-item">
+                        <div class="mpic"><img src="./images/etc/etc-player-list01.jpg" alt="김준우" /></div>
+                        <div class="mcont">
+                          <div class="minfo">10월 11일 김준우</div>
+                          <div class="mcate">수영</div>
+                        </div>
+                      </a>
+                    </div>
+                    <div class="swiper-slide">
+                      <a href="javascript:void(0)" class="slide-item">
+                        <div class="mpic"><img src="./images/etc/etc-player-list01.jpg" alt="김준우" /></div>
+                        <div class="mcont">
+                          <div class="minfo">10월 11일 김준우</div>
+                          <div class="mcate">수영</div>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="swiper-button-next"></div>
+                  <div class="swiper-button-prev"></div>
+                </div>
+                <script>
+                  var schSlideWrapMob = new Swiper('#sch-slide-mob', {
+                    //loop: true,
+                    slidesPerView: "1",
+                    //centerMode: true,
+                    spaceBetween: 20,
+                    navigation: {
+                      nextEl: "#sch-slide-mob .swiper-button-next",
+                      prevEl: "#sch-slide-mob .swiper-button-prev",
+                    },
+                    observer: true,
+                    observeParents: true,
                   });
                 </script>
               </div>

@@ -36,7 +36,7 @@ $(function(){
       $(this).parents("li").eq(0).addClass("on");
     }
   });
-  $("body").on("click", ".btn-total-nav", function(ev){
+  $("body").on("click", ".btn-total-nav, .btn-main-total-nav", function(ev){
     $(".gnb-box").removeClass("off").addClass("on");
   });
   $("body").on("click", ".btn-mob-gnb-close", function(ev){
@@ -67,5 +67,13 @@ $(function(){
     var dataId = $(this).attr("data-tab");
     $(".tabarea").removeClass("on");
     $(dataId).addClass("on");
+  });
+
+  // 달력열기
+  $("body").on("click", ".btn-datepicker", function(){
+    $(".calendar-dialog-wrap").addClass("on");
+  });
+  $("body").on("click", ".datepicker-close", function(){
+    $(".calendar-dialog-wrap").removeClass("on");
   });
 });
