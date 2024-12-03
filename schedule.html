@@ -124,7 +124,7 @@
                 </div>
               </li>
             </ul>
-
+            <button type="button" class="btn-mob-gnb-close"><img src="./images/ico/ico-pop-close.png"></button>
           </div>
         </div>
       </header>
@@ -357,6 +357,10 @@
                     </div>
                   </div>
                 </div>
+                <button type="button" class="btn-more">
+                  <span>펼치기</span>
+                  <img src="./images/ico/ico-more.png" />
+                </button>
               </li>
             </ul>
           </div>
@@ -421,6 +425,36 @@
     <!-- // wrapper -->
 
 
+    <script>
+      var tempItem = '<div class="rows more-list">';
+      tempItem += '<div class="stit">[파리올림픽] 수영 남자 200M 자유형 결승</div>';
+      tempItem += '<div class="scont">';
+      tempItem += '<div class="cols">';
+      tempItem += '<div class="svalue">국가대표</div>';
+      tempItem += '<div class="svalue">수영</div>';
+      tempItem += '</div>';
+      tempItem += '<div class="cols">';
+      tempItem += '<div class="sname">황선우</div>';
+      tempItem += '<div class="svalue">금메달</div>';
+      tempItem += '</div>';
+      tempItem += '</div>';
+      tempItem += '</div>';
+
+      $(function(){
+        $("body").on("click", ".btn-more", function(){
+          var ck = $(this).hasClass("on");
+          if(ck){
+            $(this).removeClass("on");
+            $(this).prev(".mcont").find(".more-list").remove();
+            $(this).find("span").text("펼치기");
+          }else{
+            $(this).addClass("on");
+            $(this).prev(".mcont").eq(0).append(tempItem);
+            $(this).find("span").text("접기");
+          }
+        });
+      });
+    </script>
 
                   
   </body>
