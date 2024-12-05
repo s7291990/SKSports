@@ -123,6 +123,9 @@
               </div>
             </div>
           </li>
+          <li>
+            <a href="javascript:void(0)" class="no-child">Q&A</a>
+          </li>
         </ul>
         <button type="button" class="btn-mob-gnb-close"><img src="./images/ico/ico-pop-close.png"></button>
       </div>
@@ -204,50 +207,11 @@
       <div class="ytb-pc-wrap">
         <div class="ytb-item-list">
           <div class="ytb-func-wrap">
-            <button type="button"><img src="./images/ico/ico-ytb-prev.png" /></button>
-            <button type="button"><img src="./images/ico/ico-ytb-next.png" /></button>
+            <button type="button" onclick="ytbSlideWrap.slidePrev()"><img src="./images/ico/ico-ytb-prev.png" /></button>
+            <button type="button" onclick="ytbSlideWrap.slideNext()"><img src="./images/ico/ico-ytb-next.png" /></button>
             <button type="button" class="btn-add"><img src="./images/ico/ico-ytb-add.png" /></button>
           </div>
-          <ul>
-            <li>
-              <a href="javascript:void(0)">
-                <div class="mpic"><img src="./images/etc/etc-ytb-item-list01.jpg" /></div>
-                <div class="mdesc">현시점 KBL에서 가장 빠른 팀 / 속공 모음zip.📁</div>
-              </a>
-            </li>
-            <li>
-              <a href="javascript:void(0)">
-                <div class="mpic"><img src="./images/etc/etc-ytb-item-list01.jpg" /></div>
-                <div class="mdesc">현시점 KBL에서 가장 빠른 팀 / 속공 모음zip.📁</div>
-              </a>
-            </li>
-            <li>
-              <a href="javascript:void(0)">
-                <div class="mpic"><img src="./images/etc/etc-ytb-item-list01.jpg" /></div>
-                <div class="mdesc">현시점 KBL에서 가장 빠른 팀 / 속공 모음zip.📁</div>
-              </a>
-            </li>
-          </ul>
         </div>
-
-        <div class="dh-boardPageWrap">
-          <a href="javascript:void(0)" class="btn-first"><img src="./images/board/ico__page_first.png"></a>
-          <a href="javascript:void(0)"><img src="./images/board/ico__page_prev.png"></a>
-          <a href="javascript:void(0)" class="on">1</a>
-          <a href="javascript:void(0)">2</a>
-          <a href="javascript:void(0)">3</a>
-          <a href="javascript:void(0)">4</a>
-          <a href="javascript:void(0)">5</a>
-          <a href="javascript:void(0)"><img src="./images/board/ico__page_next.png"></a>
-          <a href="javascript:void(0)" class="btn-last"><img src="./images/board/ico__page_last.png"></a>
-        </div>
-      </div>
-
-      <div class="ytb-mob-wrap">
-        <div class="ytb-func-wrap">
-          <button type="button" class="btn-add"><img src="./images/ico/ico-ytb-add.png" /></button>
-        </div>
-
         <!-- Swiper -->
         <div id="ytb-slide-wrap" class="swiper-container">
           <div class="swiper-wrapper">
@@ -269,17 +233,55 @@
                 <div class="mdesc">현시점 KBL에서 가장 빠른 팀 / 속공 모음zip.📁</div>
               </a>
             </div>
+            <div class="swiper-slide">
+              <a href="javascript:void(0)">
+                <div class="mpic"><img src="./images/etc/etc-ytb-item-list01.jpg" /></div>
+                <div class="mdesc">현시점 KBL에서 가장 빠른 팀 / 속공 모음zip.📁</div>
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="javascript:void(0)">
+                <div class="mpic"><img src="./images/etc/etc-ytb-item-list01.jpg" /></div>
+                <div class="mdesc">현시점 KBL에서 가장 빠른 팀 / 속공 모음zip.📁</div>
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="javascript:void(0)">
+                <div class="mpic"><img src="./images/etc/etc-ytb-item-list01.jpg" /></div>
+                <div class="mdesc">현시점 KBL에서 가장 빠른 팀 / 속공 모음zip.📁</div>
+              </a>
+            </div>
           </div>
+
         </div>
         <script>
           var ytbSlideWrap = new Swiper('#ytb-slide-wrap', {
             slidesPerView: "auto",
-            spaceBetween: 15,
+            spaceBetween: 24,
             observer: true,
             observeParents: true,
+            breakpoints: {
+              767: {
+                spaceBetween: 15,
+              }
+            }
           });
         </script>
+
+        <!--
+        <div class="dh-boardPageWrap">
+          <a href="javascript:void(0)" class="btn-first"><img src="./images/board/ico__page_first.png"></a>
+          <a href="javascript:void(0)"><img src="./images/board/ico__page_prev.png"></a>
+          <a href="javascript:void(0)" class="on">1</a>
+          <a href="javascript:void(0)">2</a>
+          <a href="javascript:void(0)">3</a>
+          <a href="javascript:void(0)">4</a>
+          <a href="javascript:void(0)">5</a>
+          <a href="javascript:void(0)"><img src="./images/board/ico__page_next.png"></a>
+          <a href="javascript:void(0)" class="btn-last"><img src="./images/board/ico__page_last.png"></a>
+        </div>-->
       </div>
+
     </section>
 
 

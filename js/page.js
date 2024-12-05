@@ -76,4 +76,8 @@ $(function(){
   $("body").on("click", ".datepicker-close", function(){
     $(".calendar-dialog-wrap").removeClass("on");
   });
+  $("body").on("click", ".datepicker-table td a", function(ev){
+    $(".datepicker-table td a").removeClass("selected");
+    $(this).addClass("selected");
+  });
 });
