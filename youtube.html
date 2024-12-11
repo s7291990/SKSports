@@ -247,17 +247,29 @@
 
         </div>
         <script>
-          var ytbSlideWrap = new Swiper('#ytb-slide-wrap', {
-            slidesPerView: "auto",
-            spaceBetween: 24,
-            observer: true,
-            observeParents: true,
-            breakpoints: {
-              767: {
-                spaceBetween: 15,
+          let ytbSlideWrap;
+
+          function initializeSwiper(){
+            ytbSlideWrap = new Swiper('#ytb-slide-wrap', {
+              slidesPerView: "auto",
+              spaceBetween: 24,
+              observer: true,
+              observeParents: true,
+              breakpoints: {
+                767: {
+                  spaceBetween: 15,
+                }
               }
-            }
-          });
+            });
+          }
+
+          initializeSwiper();
+
+          window.addEventListener("resize", function(){
+            ytbSlideWrap.destroy();
+            initializeSwiper();
+          })
+
         </script>
 
         <!--

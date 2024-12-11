@@ -941,7 +941,8 @@
     }
 
     .header-item-wrap .gnb-list > li .sub-menu-wrap .sub-item ul > li > ul > li > a.str {
-        font-weight: 500;
+        font-weight: 700;
+        font-size: 20px;
     }
 
     .header-item-wrap .gnb-list > li {
@@ -952,6 +953,8 @@
     .header-item-wrap .gnb-list > li > a {
         position: relative;
         color: #222;
+        font-size:20px;
+        font-weight:700;
     }
 
     .header-item-wrap .gnb-list > li > a:after {
@@ -1093,12 +1096,12 @@
     .sponsor-status-wrap .result-item-wrap .value ul li:before{width:6vw;height:6vw;}
     .sponsor-status-wrap .result-item-wrap .value ul li:after{width:5.3vw;height:5.3vw;font-size:4vw;}
     .sponsor-status-wrap .result-item-wrap .value ul li{padding-left:7vw;font-size:4vw;height:6vw;}
-    .sponsor-status-wrap .result-item-wrap .value ul li + li{margin-left:2vw;}
+    .sponsor-status-wrap .result-item-wrap .value ul li + li{margin-left:4vw;}
     .sponsor-status-wrap .time-item-wrap{border-top:1px solid #e2e2e2;margin-top:3vw;padding-top:3vw;}
     .sponsor-status-wrap .time-item-wrap .key{font-size:4vw;margin-bottom:1vw;font-weight:500;}
     .sponsor-status-wrap .time-item-wrap .value{margin-left:0;}
     .sponsor-status-wrap .time-item-wrap .value .mitem strong{font-size:5vw;}
-    .sponsor-status-wrap .time-item-wrap .value .mitem span{font-size:3vw;}
+    .sponsor-status-wrap .time-item-wrap .value .mitem span{font-size:3vw;transform: translateY(4px);}
     .main-schedule-wrap .contentWrap{width: 100%;}
     .sch-calendar-wrap{width:100%;box-sizing: border-box;padding:6.2vw 3.1vw;}
     .main-schedule-wrap .contentWrap .btn-more{display:none;right:3.1vw;top: 7vw;}
@@ -1143,9 +1146,10 @@
     .sch-detail-wrap .func-item-wrap{gap:20px;}
     .sch-detail-wrap .func-item-wrap .btn-txt{width:50px;height:28px;font-size:14px;}
     .about-item-wrap{padding:6vw 0;}
-    .about-item-wrap h2{font-size:6vw;padding-top:0;}
+    .about-item-wrap h2{font-size:6vw;padding-top:0;margin-bottom:0;}
+    .about-item-wrap .desc{margin-top:10px;}
     .subpage-header-wrap .smenu-list{display:none;}
-    .subpage-header-wrap .location-list ul li a{font-size:3vw;}
+    .subpage-header-wrap .location-list ul li a{font-size:3vw;height:45px;line-height: 46px;display: inline-flex;justify-content: center;align-items: center;}
     .month-slide-wrap.type01 .swiper-container .swiper-slide a{padding:3.1vw 0;}
     .month-slide-wrap.type01 .swiper-container .swiper-wrapper{justify-content: flex-start;}
     .ytb-item-list ul li{width:calc( 100% / 2 - 6px )}
