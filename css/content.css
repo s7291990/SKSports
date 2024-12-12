@@ -891,7 +891,8 @@
     .header-item-wrap .gnb-list > li .sub-menu-wrap .sub-item ul > li a {
         flex: 1;
         height: 50px;
-        font-size: 18px;
+        font-weight:700;
+        font-size: 20px;
         color: #666;
         padding-left: 10px;
         justify-content: flex-start;
