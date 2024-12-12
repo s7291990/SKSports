@@ -72,9 +72,11 @@ $(function(){
   // 달력열기
   $("body").on("click", ".btn-datepicker", function(){
     $(".calendar-dialog-wrap").addClass("on");
+    $(".header-item-wrap").addClass("disabled");
   });
   $("body").on("click", ".datepicker-close", function(){
     $(".calendar-dialog-wrap").removeClass("on");
+    $(".header-item-wrap").removeClass("disabled");
   });
   $("body").on("click", ".datepicker-table td a", function(ev){
     $(".datepicker-table td a").removeClass("selected");

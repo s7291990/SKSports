@@ -1,7 +1,7 @@
 
 /* 헤더 */
 .header-item-wrap{width:100%;height:70px;display:flex;justify-content:center;align-items:center;background:#cf112b;position:relative;}
-.header-item-wrap:after{z-index:52;opacity:0;content:"";width:100%;height:1px;overflow:hidden;display:block;background:#cf112b;position:absolute;left:0;top:70px;}
+.header-item-wrap:after{z-index:50;opacity:0;content:"";width:100%;height:1px;overflow:hidden;display:block;background:#cf112b;position:absolute;left:0;top:70px;}
 .header-item-wrap .rela{position:relative;z-index:51;max-width:1200px;width:100%;height:70px;display:flex;justify-content:flex-start;align-items:center;}
 .header-item-wrap .rela h1{width:200px;height:34px;}
 .header-item-wrap .rela h1 a{display:block;width:135px;height:34px;font-size:0;text-indent:-10000px;background:url(../images/etc/etc-logo.png) no-repeat center center;background-size:cover;}
@@ -99,7 +99,7 @@
 .sch-calendar-wrap table{margin:10px auto 6px auto;width:100%;table-layout:fixed;border:0;border-collapse:collapse;}
 .sch-calendar-wrap table th{height:40px;text-align:center;font-size:16px;color:#666;}
 .sch-calendar-wrap table td{height:50px;text-align:center;font-size:16px;color:#c2c2c2;}
-.sch-calendar-wrap table td a{width:40px;height:40px;border-radius:50%;display:flex;justify-content:center;align-items:center;font-size:16px;color:#222;position:relative;}
+.sch-calendar-wrap table td a{margin:0 auto;width:40px;height:40px;border-radius:50%;display:flex;justify-content:center;align-items:center;font-size:16px;color:#222;position:relative;}
 .sch-calendar-wrap table td a:before{content:"";width:4px;height:4px;border-radius:50%;overflow:hidden;display:block;background:#2723ec;position:absolute;left:50%;margin-left:-2px;bottom:7px;}
 .sch-calendar-wrap table td a.selected{background:#fbd3d4 !important;}
 .sch-calendar-wrap table td a.today{background:#dfdefc;}
@@ -305,7 +305,7 @@
 .datepicker-item-wrap table{margin:10px auto 6px auto;width:100%;table-layout:fixed;border:0;border-collapse:collapse;}
 .datepicker-item-wrap table th{height:40px;text-align:center;font-size:16px;color:#666;font-family: 'Noto Sans KR';}
 .datepicker-item-wrap table td{height:50px;text-align:center;font-size:16px;color:#c2c2c2;}
-.datepicker-item-wrap table td a{width:40px;height:40px;border-radius:50%;display:flex;justify-content:center;align-items:center;font-size:16px;color:#222;position:relative;}
+.datepicker-item-wrap table td a{margin:0 auto;width:40px;height:40px;border-radius:50%;display:flex;justify-content:center;align-items:center;font-size:16px;color:#222;position:relative;}
 .datepicker-item-wrap table td a:before{content:"";width:4px;height:4px;border-radius:50%;overflow:hidden;display:block;background:#2723ec;position:absolute;left:50%;margin-left:-2px;bottom:4px;}
 .datepicker-item-wrap table td a.selected{background:#fbd3d4 !important;}
 .datepicker-item-wrap table td a.today{background:#dfdefc;}
@@ -1225,6 +1225,7 @@
     .main3.type01{padding:0 3.1vw;}
     .photo-slide-wrap .swiper-container .swiper-button-prev{width:30px;height:30px;margin-top:-15px;}
     .photo-slide-wrap .swiper-container .swiper-button-next{width:30px;height:30px;margin-top:-15px;}
-
+    .header-item-wrap.disabled{z-index:0;}
+    .header-item-wrap{z-index:22;}
 }
 
